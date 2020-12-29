@@ -11,7 +11,7 @@ const App = () => {
     const [bodyColor, setBodyColor] = useState('white');
 
     const onTeamClick = async (team, teamColor) => {
-        const response = await axios.get(`http://data.nba.net/json/cms/noseason/team/${team}/roster.json`);
+        const response = await axios.get(`https://data.nba.net/json/cms/noseason/team/${team}/roster.json`);
 
         const player = response.data.sports_content.roster.players.player
 
